@@ -1,5 +1,5 @@
 export type NameParam = {
-  query:string
+  queue: string
 }
 
 export type BindBody = {

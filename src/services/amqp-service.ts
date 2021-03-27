@@ -28,7 +28,7 @@ export class AmqpService {
         let pubChannel = await conn.createChannel()
         let subChannel = await conn.createChannel()
 
-        return new AmqpService( queueUrl, conn, pubChannel, subChannel)
+        return new AmqpService(queueUrl, conn, pubChannel, subChannel)
     }
 
     close(): Promise<void> {
